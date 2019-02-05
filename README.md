@@ -3,4 +3,4 @@ my game development marking page
 
 
 
-https://github.com/kenneth-the-wanderer/Game-dev-2019-davin/tree/master
+https://kenneth-the-wanderer.github.io/Game-dev-2019-davin/
