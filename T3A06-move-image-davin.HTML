@@ -1,0 +1,173 @@
+<! -- T3A06-move-image-davin.HTML -->
+
+<html>
+
+<head>
+
+<title>land of wind and shade</title>
+
+<script>
+//Global variables here
+myBgPosY = 0; // present vertical position
+myBgPosX = 0; // present horizonal position
+myBgHeight = 402; // height of background image
+myBgWidth = 753; // width of background image
+myBgSpeedYdown = 1; // speed moving down
+myBgSpeedXright = 0; // speed moving right
+<!-- ******************** Background Scrolling ************************** -->
+// myScroll function controls the moving of the background image
+function myScroll() {
+myAuto()
+checkAll()
+myBgPosY += myBgSpeedYdown;
+if (myBgPosY > myBgHeight) {myBgPosY = 0}
+if (myBgPosY <0) {myBgPosY = myBgHeight}
+myBgPosX += myBgSpeedXright;
+if (myBgPosX > myBgWidth) {myBgPosX = 0}
+if (myBgPosX <0) {myBgPosX = myBgWidth}
+myBgObject.style.backgroundPosition = myBgPosX+" " + myBgPosY;
+}
+// ******************** Object Detection Starts below ************************** -->
+// myHitXY function determines if any object has hit an x, y location. Note it is better to use the myHitOther function
+function myHitXY(my1,X,Y){
+left1 = parseInt(document.getElementById(my1).style.left)
+right1 = left1 + parseInt(document.getElementById(my1).style.width)
+top1 = parseInt(document.getElementById(my1).style.top)
+bottom1 = top1 + parseInt(document.getElementById(my1).style.height)
+if ((left1 <= X ) &&
+(right1 >= X ) &&
+(top1 <= Y ) &&
+(bottom1 >= Y ) ){
+return true
+}
+}
+// myHitOther function determines if two obejcts have hit each other.
+function myHitOther(my1,my2){
+left1 = parseInt(document.getElementById(my1).style.left)
+right1 = left1 + parseInt(document.getElementById(my1).style.width)
+top1 = parseInt(document.getElementById(my1).style.top)
+bottom1 = top1 + parseInt(document.getElementById(my1).style.height)
+left2 = parseInt(document.getElementById(my2).style.left)
+right2 = left2 + parseInt(document.getElementById(my2).style.width)
+top2 = parseInt(document.getElementById(my2).style.top)
+bottom2 = top2 + parseInt(document.getElementById(my2).style.height)
+if ((right1 >= left2 ) &&
+(bottom1 >= top2 ) &&
+(left1 <= right2 ) &&
+(top1 <= bottom2) ){
+return true
+}
+}
+// Group all your detection code here
+function checkAll(){
+if (myHitXY('move1',200,280)) {
+document.getElementById('myShowDiv3').innerHTML = 'You hit the blue dot'
+} else {document.getElementById('myShowDiv3').innerHTML = ''}
+if (myHitOther('move1','move2')) {
+document.getElementById('myShowDiv3').innerHTML = 'You hit the windy boy'
+}
+if (myHitOther('sword1','move2')) {
+document.getElementById('myShowDiv3').innerHTML = 'The bullet hit john again'
+document.getElementById('sword1').style.visibility = 'visible'
+document.getElementById('sword1').style.left = '100px'
+clearInterval(document.myShot)
+}
+}
+
+document.mySpeedX = 0;
+document.mySpeedY = 0;
+function myAuto(){
+if(parseInt(document.getElementById('move1').style.left) > window.innerWidth - document.getElementById('move1').width){
+document.mySpeedX *= -1
+}
+if(parseInt(document.getElementById('move1').style.right) > window.innerWidth - document.getElementById('move1').width){
+document.mySpeedX *= 1
+}
+document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)+document.mySpeedX+'px'
+document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)+document.mySpeedY+'px'
+// auto moving "move2" should occur here similar to the above.
+//folowing code showes where move 2 and move3, move4 etc are located
+document.getElementById('myShowDiv1').innerHTML = 'move1 x='+parseInt(document.getElementById('move1').style.left) +
+', y='+parseInt(document.getElementById('move1').style.top)
+document.getElementById('myShowDiv2').innerHTML = 'move2 x='+parseInt(document.getElementById('move2').style.left) +
+', y='+parseInt(document.getElementById('move2').style.top) +
+'<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top) +
+'<br> move2 x='+parseInt(document.getElementById('move2').style.left) +', y='+parseInt(document.getElementById('move2').style.top)
+}
+function myGunPrep(){
+document.getElementById('sword1').style.visibility = 'visible'
+document.getElementById('sword1').style.left = document.getElementById('move1').style.left
+document.getElementById('sword1').style.top = document.getElementById('move1').style.top
+clearInterval(document.myShot)
+document.myShot = setInterval('myGun()', 30) // calls the function every 30 mille seconds
+}
+function myGun(){
+document.getElementById('sword1').style.left = parseInt(document.getElementById('sword1').style.left) + 30 + 'px'
+}
+</script>
+
+</head>
+
+<!-- ******************** Here the webpage begins ************************** -->
+
+<!-- ******************** onkeypress just for webpages is useless on mobile apps ************************** -->
+
+<body background="https://vignette.wikia.nocookie.net/mspaintadventures/images/a/a0/LOWAS_introduction.png/revision/latest?cb=20100429065207" onload="myTimer = setInterval('myScroll()', 100)" onkeypress="{
+if(event.keyCode==97){ document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)-5+'px'} // small 'a' key go left
+if(event.keyCode==87){ document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)-5+'px'} // small 'w' key go up
+if(event.keyCode==119){ document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.top)-5+'px'} // small 's' key go down
+if(event.keyCode==119){ document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)-5+'px'} // small 'd' key go right
+}">
+
+<script> // This object must be after the body tag
+myBgObject = eval('document.body');
+</script>
+
+<h2 align=center style="background-color:indigo"> moving images by davin</h2>
+
+<!-- ******************** Following should be all your images ************************** -->
+
+<img id="move1" src="https://vignette.wikia.nocookie.net/mspaintadventures/images/c/cb/Bec_Noir_trophies.gif/revision/latest?cb=20110222222225" style="position:absolute; width:300px; height:300px; left:30px; top:250px" onClick="myGunPrep()">
+
+<img id="move2" src="https://vignette.wikia.nocookie.net/mspaintadventures/images/5/5f/John_Egbert_Vriska_Outfit.png/revision/latest?cb=20101018200555" style="position:absolute; width:200px; height:300px; left:1000px; top:240px;"/>
+
+<input type=button value="Fire" onClick="myGunPrep()">
+
+<img id="sword1" src="https://github.com/kenneth-the-wanderer/Game-dev-2019-davin/blob/master/Regisword.png?raw=true" style="position:absolute; width:-10px; height:-10px; left:500px; top:240px; visibility:hidden"/>
+
+<!-- ******************** This is the silly little dot the main object hits ************************** -->
+
+<h1 style="position:absolute;left:200px;top:230px;"><font color=blue>.</font></h1>
+
+
+<input type=button value="Auto Down" onClick="{
+document.mySpeedY += 6
+}">
+
+<input type=button value="Auto up" onClick="{
+document.mySpeedY += -6
+}">
+
+<input type=button value="Auto Right" onClick="{
+document.mySpeedX += 4
+}">
+
+<input type=button value="Auto left" onClick="{
+document.mySpeedX += -4
+}">
+
+<!-- ******************** General game output ************************** -->
+
+<div id="myShowDiv1" style="width:300px; background-color:green">out 1</div>
+
+<div id="myShowDiv2" style="width:300px; background-color:green">out 2</div>
+
+<div id="myShowDiv3" style="width:300px; background-color:green">out 3</div>
+
+<br>At the bottom of every page make sure you include the following button:<br>
+
+<input type=button value="Back" style="font-size:25px" onclick="{window.history.back()}"><br><br>
+
+</body>
+
+</html>
