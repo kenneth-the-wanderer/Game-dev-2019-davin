@@ -1,0 +1,26 @@
+<body background="https://pa1.narvii.com/6580/da3c0a70f2deb8b68f087cbc07364f5c63441885_hq.gif" onload="myTimer = setInterval('myScroll()', 100)" onkeydown="{
+if(event.key=='w'){ document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)-5+'px'} // small 'w' key go up
+if(event.key=='a'){ document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)-5+'px'} // small 'a' key go left
+if(event.key=='s'){ document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)+5+'px'} // small 's' key go down
+if(event.key=='d'){ document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left)+5+'px'} // small 'd' key go right
+if(event.keyCode=='38'){ document.getElementById('move2').style.top = parseInt(document.getElementById('move2').style.top)-5+'px'}
+if(event.keyCode=='37'){ document.getElementById('move2').style.left = parseInt(document.getElementById('move2').style.left)-5+'px'}
+if(event.keyCode=='40'){ document.getElementById('move2').style.top = parseInt(document.getElementById('move2').style.top)+5+'px'}
+if(event.keyCode=='39'){ document.getElementById('move2').style.left = parseInt(document.getElementById('move2').style.left)+5+'px'}
+}">
+<script> // This object must be after the body tag
+myBgObject = eval('document.body');
+</script>
+
+<h2 align=center style="background-color:indigo"> was by davin</h2>
+
+<!-- ******************** Following should be all your images ************************** -->
+
+<img id="move1" src="https://vignette.wikia.nocookie.net/mspaintadventures/images/d/dd/GodTierDave.png/revision/latest?cb=20120728151447" style="position:absolute; width:200px; height:300px; left:30px; top:250px">
+
+<img id="move2" src="https://vignette.wikia.nocookie.net/mspaintadventures/images/8/80/Wayward_Vagabond.png/revision/latest?cb=20100719014054" style="position:absolute; width:200px; height:300px; left:1000px; top:240px;"/>
+
+
+
+
+</body>
