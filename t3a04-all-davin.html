@@ -1,0 +1,38 @@
+<h2 align=center>Arrays by davin</h2>
+
+First button sets and shows the myStuff array.
+
+Second button sets and shows the myRandom array.<br>
+
+<input type=button value="Run myStuff" onclick="
+//alert( Math.floor(Math.random()*9+1) )
+myStuff = new Array()
+myStuff[0] = 'work it'
+myStuff[1] = 'make it' 
+myStuff[2] = 'do it' 
+myStuff[3] = 'make us' 
+myStuff[4] = 'harder' 
+myStuff[5] = 'better' 
+myStuff[6] = 'fater' 
+myStuff[7] = 'Stronger' 
+for (myLoop=0; myLoop <= 7; myLoop++ ){
+document.getElementById('myDiv01').innerHTML += myStuff[myLoop] + ' <br>'
+}
+"><br><br>
+
+<div id="myDiv01"></div><br>
+
+Loop this amount <input type=text id="myText01" size=6 value= 5><br>
+
+<input type=button value="Run myRandom" onclick="
+myRandomNumber = new Array()
+myRandomNumber[0] = Math.floor(Math.random()*9+1)
+document.getElementById('myDiv02').innerHTML += myRandomNumber[0] + ' <br>'
+for (myLoop=0; myLoop <= 7; myLoop++ ){
+if (myRandomNumber[myLoop] > myRandomNumber[myLoop + 1] ){
+myTemp = myRandomNumber[myLoop] // you finish two more lines
+}
+}
+"><br>
+
+<div id="myDiv02"></div>
