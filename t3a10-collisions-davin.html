@@ -1,0 +1,404 @@
+<html>
+
+<head>
+
+<script>
+function myHitOther(my1,my2){
+   left1   = parseInt(document.getElementById(my1).style.left)
+   right1  = left1 + parseInt(document.getElementById(my1).style.width)
+   top1    = parseInt(document.getElementById(my1).style.top)
+   bottom1 = top1   + parseInt(document.getElementById(my1).style.height)
+   left2   = parseInt(document.getElementById(my2).style.left)
+   right2  = left2 + parseInt(document.getElementById(my2).style.width)
+   top2    = parseInt(document.getElementById(my2).style.top)
+   bottom2 = top2   + parseInt(document.getElementById(my2).style.height)
+   if ((right1  >=  left2  ) &&
+       (bottom1 >=  top2   ) &&
+       (left1   <=  right2 ) &&
+       (top1    <=  bottom2) ){
+       return true
+   }
+}
+myBgPosX = 0
+myBgPosY = 0
+function myScroll() {
+myBgPosX += 0;
+myBgPosY += 0;
+myBgObject.style.backgroundPosition = myBgPosX+" " + myBgPosY;
+}
+</script>
+
+</head>
+
+<body background="https://gamepedia.cursecdn.com/zelda_gamepedia_en/thumb/3/3c/Lost_Woods.png/300px-Lost_Woods.png?version=998f69c8ebe430eac730af9cd7e6ea1f"  onload="{
+myTimer = setInterval('myScroll()', 100)
+}" >
+
+<script>
+myBgObject = eval('document.body');
+</script>
+
+</body>
+
+</html>
+
+<script>
+function myCheckKeys(event){
+
+   //document.getElementById('myDiv01').innerHTML += String.fromCharCode(event.keyCode)
+   if (String.fromCharCode(event.keyCode) == 'S') {
+ 	document.getElementById('myDiv01').style.top = parseInt(document.getElementById('myDiv01').style.top) + 10 + 'px'
+   }
+
+   if (String.fromCharCode(event.keyCode) == 'A') {
+ 	document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) - 10 + 'px'
+   }
+
+   if (String.fromCharCode(event.keyCode) == 'W') {
+ 	document.getElementById('myDiv01').style.top = parseInt(document.getElementById('myDiv01').style.top) - 10 + 'px'
+   }
+
+   if (String.fromCharCode(event.keyCode) == 'D') {
+ 	document.getElementById('myDiv01').style.left = parseInt(document.getElementById('myDiv01').style.left) + 10 + 'px'
+   }
+// check if hit
+if (myHitOther('myDiv01', 'myDiv02')){
+
+location="https://pa1.narvii.com/6568/6172e3489a738e2ec846d40acef84bcfc52596e2_hq.gif"
+}
+if (myHitOther('myDiv01', 'myDiv03')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv04')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv05')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv06')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv07')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv08')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv09')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv10')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv11')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv12')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv13')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv14')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv15')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv16')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv17')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv18')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv19')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv20')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv21')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv22')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv23')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv24')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv25')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv26')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv27')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv28')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv29')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv30')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv31')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv32')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv33')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+if (myHitOther('myDiv01', 'myDiv34')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+  if (myHitOther('myDiv01', 'myDiv35')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+  if (myHitOther('myDiv01', 'myDiv36')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+  if (myHitOther('myDiv01', 'myDiv37')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+  if (myHitOther('myDiv01', 'myDiv38')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+  if (myHitOther('myDiv01', 'myDiv39')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+
+  if (myHitOther('myDiv01', 'myDiv40')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+    if (myHitOther('myDiv01', 'myDiv41')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+ if (myHitOther('myDiv01', 'myDiv42')){
+
+ 	document.getElementById('myDiv01').style.left = '900px'
+
+ 	document.getElementById('myDiv01').style.top = '470px'
+}
+
+}
+</script>
+<body onKeyDown="{myCheckKeys(event)}">
+
+
+
+
+
+
+
+
+<div id="myDiv01" style="position:absolute; width:25px; height:25px; left:900px; top:450px" ><img width="100" src= "https://vignette.wikia.nocookie.net/mspaintadventures/images/b/b6/Johnlink.png/revision/latest?cb=20101031233720"style="position:absolute; width:100px; height:100px;"></div>
+
+<div id="myDiv02" style="position:absolute; width:75px; height:75px; left:100px; top:150px" ><img width="100" src= "https://vignette.wikia.nocookie.net/zelda/images/e/e6/Sacred_Grove_Guardians.png/revision/latest?cb=20110222010602"></div>
+
+<div id="myDiv03" style="position:absolute; width:75px; height:75px; left:400px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv04" style="position:absolute; width:75px; height:75px; left:500px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv05" style="position:absolute; width:75px; height:75px; left:600px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv06" style="position:absolute; width:75px; height:75px; left:700px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv07" style="position:absolute; width:75px; height:75px; left:800px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv08" style="position:absolute; width:75px; height:75px; left:900px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv09" style="position:absolute; width:75px; height:75px; left:1000px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv10" style="position:absolute; width:75px; height:75px; left:300px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv11" style="position:absolute; width:75px; height:75px; left:200px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv12" style="position:absolute; width:75px; height:75px; left:100px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv13" style="position:absolute; width:75px; height:75px; left:1px; top:450px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv14" style="position:absolute; width:75px; height:75px; left:1px; top:350px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv15" style="position:absolute; width:75px; height:75px; left:1px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv16" style="position:absolute; width:75px; height:75px; left:1px; top:150px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv17" style="position:absolute; width:75px; height:75px; left:1px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv18" style="position:absolute; width:75px; height:75px; left:100px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv19" style="position:absolute; width:75px; height:75px; left:200px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv20" style="position:absolute; width:75px; height:75px; left:300px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv21" style="position:absolute; width:75px; height:75px; left:400px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv22" style="position:absolute; width:75px; height:75px; left:500px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv23" style="position:absolute; width:75px; height:75px; left:600px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv24" style="position:absolute; width:75px; height:75px; left:700px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv25" style="position:absolute; width:75px; height:75px; left:800px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv26" style="position:absolute; width:75px; height:75px; left:900px; top:50px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv27" style="position:absolute; width:75px; height:75px; left:1px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv28" style="position:absolute; width:75px; height:75px; left:1000px; top:150px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv29" style="position:absolute; width:75px; height:75px; left:1000px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv30" style="position:absolute; width:75px; height:75px; left:1000px; top:350px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv31" style="position:absolute; width:75px; height:75px; left:1000px; top:450px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv32" style="position:absolute; width:75px; height:75px; left:1000px; top:550px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv33" style="position:absolute; width:75px; height:75px; left:1000px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv34" style="position:absolute; width:75px; height:75px; left:800px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv35" style="position:absolute; width:75px; height:75px; left:700px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv36" style="position:absolute; width:75px; height:75px; left:600px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv37" style="position:absolute; width:75px; height:75px; left:400px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv38" style="position:absolute; width:75px; height:75px; left:300px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv39" style="position:absolute; width:75px; height:75px; left:200px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv40" style="position:absolute; width:75px; height:75px; left:100px; top:250px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv41" style="position:absolute; width:75px; height:75px; left:700px; top:150px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
+
+<div id="myDiv42" style="position:absolute; width:75px; height:75px; left:300px; top:350px" ><img width="100" src= "https://gifimage.net/wp-content/uploads/2018/06/transparent-fog-gif-6.gif"></div>
