@@ -1,0 +1,23 @@
+<h2 align=center>2d arrays by davin</h2>
+<input type=button value="generate 2d array" onclick"{
+
+  document.getElementById('myDiv01').innerHTML= ''
+    let myChart = new Array()
+
+    myChart[0] = new Array()
+    myChart[1] = new Array()
+
+    myChart[0][0] = 3
+    myChart[0][1] = 12
+    myChart[1][0] = 3
+    myChart[1][1] = 12
+
+    document.getElementById('myDiv01').innerHTML += `
+      <table border=1>
+          <tr><td> ${myChart[0][0]} </td><td> ${myChart[0][1]} </td> </tr>
+          <tr><td> ${myChart[1][0]} </td><td> ${myChart[1][1]} </td> </tr>
+      </table> `
+
+}"><br><br>
+
+<div id="myDiv01"> yay </div>
