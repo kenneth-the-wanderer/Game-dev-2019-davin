@@ -1,0 +1,20 @@
+<h1 align=center>innerHTML by Davin </h1>
+<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">fire ball</a><br>
+
+x = <input type=text id="myText01" value=413>
+<div id="myDiv01"> yes this is fine</div>
+
+<input type=button value="test innerHTML" onClick="{
+  document.all.myDiv01.innerHTML =
+  'wowie <font color=orange> much innerHTML</font> cool. such awsome'
+}">
+<div id="myDiv02"> THIS IS NOT FINE</div>
+<input type=button value="CSS style" onClick="{
+  document.all.myDiv02.innerHTML =
+  'AAAAAA <font style=\' color:orange; background-color:blue;\'>AAAAAA'
+ '</font> neat'
+}">
+<div id="myDiv03"> AAAaaa</div>
+<input type=button value="getElementByid()" onClick="{
+  document.getElementById('myDiv03').innerHTML = 'skin melts'
+}">
