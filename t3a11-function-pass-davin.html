@@ -1,13 +1,58 @@
-
 <script>
-function myFun(myPass){
-  document.getElementById('myDiv01').innerHTML = myPass
+function mySquare(myNumber){
+	document.getElementById('myDiv01').innerHTML= myNumber * myNumber
 }
 </script>
-<h2 align=center>passing variables to functions by davin</h2>
-<div id="myDiv01" style="position:absolute; width:25px; height:25px; left:900px; top:450px" ><img width="100" src= "https://vignette.wikia.nocookie.net/mspaintadventures/images/b/b6/Johnlink.png/revision/latest?cb=20101031233720"></div>
 
-<input type=button value="functions" onClick="{
-  myVariable=2
-  myFun(myVariable)
+
+<input type=text id="myText01" value="413"> <br>
+
+<textarea id="myArea01" rows=4 cols=70></textarea><br>
+
+<div id="myDiv01" > Square Numbers</div>
+<input type=button value="1^{2}" onClick="{
+
+myNumber = 1
+
+mySquare(myNumber)
+}">
+<input type=button value="2^{2}" onClick="{
+myNumber = 2
+
+mySquare(myNumber)
+}">
+<input type=button value="3^{2}" onClick="{
+	myNumber = 3
+
+mySquare(myNumber)
+}">
+<input type=button value="4^{2}" onClick="{
+	myNumber = 4
+
+mySquare(myNumber)
+}">
+<input type=button value="5^{2}" onClick="{
+	myNumber = 5
+
+mySquare(myNumber)
+}">
+<input type=button value="6^{2}" onClick="{
+	myNumber = 6
+
+mySquare(myNumber)
+}">
+<input type=button value="7^{2}" onClick="{
+	myNumber = 7
+
+mySquare(myNumber)
+}">
+<input type=button value="8^{2}" onClick="{
+	myNumber = 8
+
+mySquare(myNumber)
+}">
+<input type=button value="9^{2}" onClick="{
+	myNumber = 9
+
+mySquare(myNumber)
 }">
