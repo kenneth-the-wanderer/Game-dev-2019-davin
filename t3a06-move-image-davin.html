@@ -1,33 +1,66 @@
-<body background="https://vignette.wikia.nocookie.net/mspaintadventures/images/a/a0/LOWAS_introduction.png/revision/latest?cb=20100429065207" onload="myTimer = setInterval('myScroll()', 100)">
+<h2 align=center>Move Image by Davin</h2>
 
+"not acurite sburb"<br>
 
-<h2 align=center style="background-color:indigo"> moving images by davin</h2>
+<script>
+document.body.style.backgroundImage = "url('https://www.bhp.com/-/media/images/2018-water-report/180828_wr2018cover.jpg?mh=844&h=844&w=1500&la=en&hash=16406F779CD04F31FE68780D8A645746DB1A5A0C')";
+</script>
 
-<img id="move1" src="https://vignette.wikia.nocookie.net/mspaintadventures/images/c/cb/Bec_Noir_trophies.gif/revision/latest?cb=20110222222225" style="position:absolute; width:300px; height:300px; left:30px; top:250px" onClick="myGunPrep()">
+<input type=text value=0 onMouseOver="{
+  this.value = 'x = ' + document.getElementById('myImage01').style.left
+}"><br>
+<input type=text value=0 onMouseOver="{
+  this.value = 'y = ' + document.getElementById('myImage01').style.top
+}"><br>
 
-<img id="move2" src="https://vignette.wikia.nocookie.net/mspaintadventures/images/5/5f/John_Egbert_Vriska_Outfit.png/revision/latest?cb=20101018200555" style="position:absolute; width:200px; height:300px; left:1000px; top:240px;"/>
+<table border=1>
+<tr><td><input type=button value="Up-Left" onclick="{
+   document.getElementById('myImage01').style.top =
+   parseInt(document.getElementById('myImage01').style.top) - 10
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10
+}"></td>
+<td><input type=button value="Up" onclick="{
+   document.getElementById('myImage01').style.top =
+   parseInt(document.getElementById('myImage01').style.top) - 10
+}"></td>
+<td><input type=button value="Up-Right" onclick="{
+   document.getElementById('myImage01').style.top =
+   parseInt(document.getElementById('myImage01').style.top) - 10
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10
+}"></td></tr><br>
 
+<tr><td><input type=button value="Left" onclick="{
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10
+}"></td>
+<td><input type=button value="Reset" onclick="{
+   document.getElementById('myImage01').style.top = 0
+   document.getElementById('myImage01').style.left = 0
+}"></td>
+<td><input type=button value="Right" onclick="{
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10
+}"></td></tr><br>
 
+<tr><td><input type=button value="Down-Left" onclick="{
+   document.getElementById('myImage01').style.top =
+   parseInt(document.getElementById('myImage01').style.top) + 10
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) - 10
+}"></td>
+<td><input type=button value="Down" onclick="{
+   document.getElementById('myImage01').style.top =
+   parseInt(document.getElementById('myImage01').style.top) + 10
+}"></td>
+<td><input type=button value="Down-Right" onclick="{
+   document.getElementById('myImage01').style.top =
+   parseInt(document.getElementById('myImage01').style.top) + 10
+   document.getElementById('myImage01').style.left = parseInt(document.getElementById('myImage01').style.left) + 10
+}"></td></tr>
+</table>
 
-<input type=button value="Down" onClick="{
-document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top) +6
+<input type=text value=1 id=cookieClick><br>
+
+<img src="https://vignette.wikia.nocookie.net/trollslum/images/7/7e/Nackenhat2.png/revision/latest?cb=20120909055817" id="myImage01"
+style="position:relative; display:block; " onclick="{
+   document.all.cookieClick.value = Number(document.all.cookieClick.value) + 1
+   document.getElementById('myImage01').style.left = Math.random() * 300
+   document.getElementById('myImage01').style.top = Math.random() * 300
 }">
-
-<input type=button value="up" onClick="{
-document.getElementById('move1').style.top = parseInt(document.getElementById('move1').style.top)-6
-}">
-
-<input type=button value="Right" onClick="{
-  document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left) + 4
-}">
-
-<input type=button value="left" onClick="{
-  document.getElementById('move1').style.left = parseInt(document.getElementById('move1').style.left) - 4
-}">
-
-
-
-
-</body>
-
-</html>
