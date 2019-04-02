@@ -1,53 +1,55 @@
+<body>
 
-
+<input type=textarea id="myText04" value=''>
 <script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = Math.random();
-}
+   function myFunc(){for(x=0; x<=13; x++){
+      document.all.myText04.value += x;
+      x = x;
+      myFunc[x] = new Array();
+      myFunc[x] = x;
+      myFunc[x]
+      }
+   document.getElementById('myDiv01').innerHTML = `
+    <table border=1>
+      <tr><td> ${myFunc[1]} </td><td> ${myFunc[2]} </td><td> ${myFunc[3]} </td><td> ${myFunc[4]} </td><td> ${myFunc[5]} </td><td> ${myFunc[6]} </td><td> ${myFunc[7]} </td><td> ${myFunc[8]} </td><td> ${myFunc[9]} </td><td> ${myFunc[10]} </td><td> ${myFunc[11]} </td><td> ${myFunc[12]} </td><td> ${myFunc[13]} </td></tr>
+    </table>
+   `
+   }
 </script>
 
-<input  type=button  value="input and output"  onclick="{
-	document.getElementById('myDiv01').innerHTML=' <ol><li>input,output using text and divs<li>variables x=3 <li>sasis</ol> <br><br>'
+
+
+<br><input type=button value=Review onclick="{
+   document.getElementById('myDiv01').innerHTML = `
+     <ol>
+      <li>Input-input type=button / Output-document.all.mydiv01.value</li>
+      <li>Variables-x=3</li>
+      <li>Decisions-If(){}</li>
+      <li>Loops-for(x=0; x<3; x++){}</li>
+      <li>Functions-function myFunc{}</li>
+      <li>Arrays-let meme = [im like, hey, whats up, hello]</li>
+      <li>Events-onmouseclick</li>
+      <li>Objects-{name:sasis}</li>
+      <li>Classes</li>
+     </ol>`
+}"><br>
+
+<input type=button value='The Basics' onclick="{
+   document.getElementById('myDiv01').innerHTML = `
+     <input type=textarea id=myText01 value='Insert number, Mouse Over' onmouseover='{ document.all.myText02.value = document.all.myText01.value * document.all.myText01.value}'><br>
+     <input type=textarea id=myText02 value='...'><br>
+     <input type=textarea id=myText03 value='Are Both Equal?' onmouseover='{ if(document.all.myText01.value == document.all.myText02.value){document.all.myText03.value = true} else {document.all.myText03.value = false}}'>
+   `
+}"><br>
+
+<input type=button value='The Intermediate' onclick="{
+   myFunc()
+}"><br>
+
+<input type=button value='The Advanced' onclick="{
+   myObj={name:'mark', age:34};
+   document.all.myText04.value = myObj.name + ', ' + myObj.age
 }">
 
-<div id="myDiv01">...</div>
-<input  type=button  value="variables"  onclick="{
-	document.getElementById('myDiv02').innerHTML='<var>413</var>'
-}">
-
-<div id="myDiv02">...</div>
-<input  type=button  value="dicision"  onclick="{
-	document.getElementById('myDiv03').innerHTML= '<h1 id='myDiv03'><h1>'
-}">
-
-
-<input  type=button  value="variables"  onclick="{
-	document.getElementById('myDiv04').innerHTML=''
-}">
-
-<div id="myDiv04">...</div>
-<input  type=button  value="variables"  onclick="{
-	document.getElementById('myDiv05').innerHTML=''
-}">
-
-<div id="myDiv05">...</div>
-<input  type=button  value="variables"  onclick="{
-	document.getElementById('myDiv06').innerHTML=''
-}">
-
-<div id="myDiv06">...</div>
-<input  type=button  value="variables"  onclick="{
-	document.getElementById('myDiv07').innerHTML=''
-}">
-
-<div id="myDiv07">...</div>
-<input  type=button  value="variables"  onclick="{
-	document.getElementById('myDiv08').innerHTML=''
-}">
-
-<div id="myDiv08">...</div>
-<input  type=button  value="variables"  onclick="{
-	document.getElementById('myDiv09').innerHTML=''
-}">
-
-<div id="myDiv09">...</div>
+<div id="myDiv01">
+</body>
