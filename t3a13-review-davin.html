@@ -1,6 +1,6 @@
 <body>
 
-<input type=textarea id="myText04" value=''>
+<input type=textarea id="myText04" value='start'>
 <script>
    function myFunc(){for(x=0; x<=13; x++){
       document.all.myText04.value += x;
@@ -43,13 +43,18 @@
 }"><br>
 
 <input type=button value='The Intermediate' onclick="{
-   myFunc()
+  document.getElementById('myDiv01').innerHTML = 'borito'
+  document.all.myText04.value = myFunc()
 }"><br>
 
 <input type=button value='The Advanced' onclick="{
    myObj={name:'mark', age:34};
    document.all.myText04.value = myObj.name + ', ' + myObj.age
-}">
+}"><br>
 
+<input type=button value='clear' onclick="{
+   myObj={name:'start'};
+   document.all.myText04.value = myObj.name
+}">
 <div id="myDiv01">
 </body>
