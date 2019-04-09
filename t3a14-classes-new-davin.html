@@ -1,0 +1,30 @@
+<h2 align=center> JavaScript classes introduction by davin</h2>
+<input type=text id="myNameInput" placeholder="axolotl" value="">
+
+<input id="myButton1" type="button" value="make and show axolotl" onclick="{
+
+  class myAnimal{
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv01').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' years old<br>'
+    }
+  }
+  myAxolotl = new myAnimal('bill`s favour', 10000)
+  myAxolotl.myShow()
+}"<br><br>
+<div id='myDiv01'>...</div> <br>
+
+<script scr='https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/AxolotlBE.jpg/220px-AxolotlBE.jpg'></script>
+
+<input type="button" value="Use ResponsiveCode"onclick="{
+  ResponsiveVoice.speak('storm is not working')
+}"><br><br>
+
+
+<input type="button" value="initilize speak" onclick="{
+ResponsiveVoice.speak('The Mage of Light has Ascended', 'Us English Male',
+{pitch:1, rate: 1, volume: 1})
+}"><br><br>
