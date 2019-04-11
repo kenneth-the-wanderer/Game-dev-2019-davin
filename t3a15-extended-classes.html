@@ -1,0 +1,24 @@
+<input id="myButton1" type="button" value="make and show axolotl" onclick="{
+
+  class myAnimal{
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv01').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' years old<br>'
+    }
+  }
+
+  class myAxolotl extends myAnimal {
+
+    myShow(){
+        document.getElementById('myDiv01').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' years old<br>'
+    }
+  }
+
+  myPet = new myAnimal('bills favour',10000)
+  myPet.myShow()
+
+}"> <br><br>
+<div id='myDiv01'>...</div> <br>
