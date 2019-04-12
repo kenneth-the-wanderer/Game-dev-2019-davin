@@ -1,20 +1,76 @@
-<h1 align=center>innerHTML by Davin </h1>
-<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">fire ball</a><br>
+<h1 align=center>InnerHTML by Davin</h1>
 
-x = <input type=text id="myText01" value=413>
-<div id="myDiv01"> yes this is fine</div>
+<a href="https://www.w3schools.com/jsref/prop_html_innerhtml.asp">w3schools innerHTML</a><br>
 
-<input type=button value="test innerHTML" onClick="{
+x = <input type=text id="myText01" value=7>
+<div id="myDiv01">...</div>
+
+<input type=button value="text innerHTML" onclick="{
   document.all.myDiv01.innerHTML =
-  'wowie <font color=orange> much innerHTML</font> cool. such awsome'
-}">
-<div id="myDiv02"> THIS IS NOT FINE</div>
-<input type=button value="CSS style" onClick="{
-  document.all.myDiv02.innerHTML =
-  'AAAAAA <font style=\' color:orange; background-color:blue;\'>AAAAAA'
- '</font> neat'
-}">
-<div id="myDiv03"> AAAaaa</div>
-<input type=button value="getElementByid()" onClick="{
-  document.getElementById('myDiv03').innerHTML = 'skin melts'
-}">
+  'looks, <font color=red>like water</font>'
+}"><br>
+
+
+<input type=button value="CSS Style" onclick="{
+  document.all.myDiv01.innerHTML =
+'Cool, <font style=\'color:Blue; background-color:Red; \'>okili dokali</font>'
+}"><br>
+
+
+<input type=button value="Image" onclick="{
+  myImg()
+}"><br>
+
+<script>
+function myImg()
+{
+   var ig = document.getElementById("myDiv01");
+   ig.innerHTML="<img src=\"https://s2.r29static.com//bin/entry/6de/0,0,2000,1050/x,80/1876988/image.jpg\" width=\"400px\" height=\"150px\">";
+}
+</script>
+
+
+<input type=button value="Video" onclick="{
+  myVid()
+}"><br>
+
+<script>
+function myVid()
+{
+   var em = document.getElementById("myDiv01");
+   em.innerHTML='<iframe width="560" height="315" src="https://www.youtube.com/embed/5pNECVVwZFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+}
+</script>
+
+
+<input type=button value="Table" onclick="{
+  document.all.myDiv01.innerHTML =
+   `<table border=1>
+    <tr><td>This</td><td>is</td></tr>
+    <tr><td>really</td><td>epic</td></tr>
+    </table>`
+}"><br>
+
+
+
+
+
+<script>
+function changeText(){
+	var myText01 = document.getElementById('myText01').value;
+	document.getElementById('myDiv01').innerHTML = myText01;
+}
+</script>
+
+
+<input type='button' onclick='changeText()' value='Change Text'/>
+
+<script>
+function textChangeRed(){
+   var ReddyB = document.getElementById('para').innerHTML;
+   var ReddyC = "<span style='color:#FF0000'>" + ReddyB + "</span>";
+   document.getElementById('para').innerHTML = ReddyC;
+}
+</script>
+<p id='para'>This is <id='Red'>red</p>
+<input type='button' onmouseover='textChangeRed()' value='Reddify'>
