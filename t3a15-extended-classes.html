@@ -1,3 +1,75 @@
+<input id="myButton1" type="button" value="==> talk to axolotl" onclick="{
+
+  class myAnimal{
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv02').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' years old<br>'
+    }
+  }
+
+  class myAxolotl extends myAnimal {
+
+    myShow(){
+        document.getElementById('myDiv02').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' long <br>'
+    }
+  }
+
+  myPet = new myAnimal('bills favour',10000)
+  myPet.myShow()
+
+}"> <br><br>
+<div id='myDiv02'>...</div> <br>
+<input id="myButton1" type="button" value="==> continue conversation" onclick="{
+
+  class myAnimal{
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv03').innerHTML= 'why ' + this.myName + ' ,has it been ' + this.myAge + ' years<br>'
+    }
+  }
+
+  class myAxolotl extends myAnimal {
+
+    myShow(){
+        document.getElementById('myDiv03').innerHTML= 'you ' + this.myName + ' are ' + this.myAge + ' long <br>'
+    }
+  }
+
+  myPet = new myAnimal('bills favour',10000)
+  myPet.myShow()
+
+}"> <br><br>
+<div id='myDiv03'>...</div> <br>
+<input id="myButton1" type="button" value="==> inult axolotl" onclick="{
+
+  class myAnimal{
+    constructor(passName, passAge) {
+      this.myName = passName;
+      this.myAge = passAge;
+    }
+    myShow(){
+      document.getElementById('myDiv04').innerHTML= 'you, ' + this.myName + ' are ' + this.myAge + '% stupid<br>'
+    }
+  }
+
+  class myAxolotl extends myAnimal {
+
+    myShow(){
+        document.getElementById('myDiv04').innerHTML= '`ello ' + this.myName + '  you are  ' + this.myAge + ' long <br>'
+    }
+  }
+
+  myPet = new myAnimal('bills favour',10000)
+  myPet.myShow()
+
+}"> <br><br>
+<div id='myDiv04'>...</div> <br>
 <input id="myButton1" type="button" value="make and show axolotl" onclick="{
 
   class myAnimal{
@@ -6,14 +78,14 @@
       this.myAge = passAge;
     }
     myShow(){
-      document.getElementById('myDiv01').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' years old<br>'
+      document.getElementById('myDiv05').innerHTML= 'sorry ' + this.myName + ' you are ' + this.myAge + '% magestic <br>'
     }
   }
 
   class myAxolotl extends myAnimal {
 
     myShow(){
-        document.getElementById('myDiv01').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' long <br>'
+        document.getElementById('myDiv05').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' long <br>'
     }
   }
 
@@ -21,4 +93,4 @@
   myPet.myShow()
 
 }"> <br><br>
-<div id='myDiv01'>...</div> <br>
+<div id='myDiv05'>...</div> <br>
