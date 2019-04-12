@@ -1,6 +1,3 @@
-<h2 align=center> JavaScript classes introduction by davin</h2>
-<input type=text id="myNameInput" placeholder="axolotl" value="">
-
 <input id="myButton1" type="button" value="make and show axolotl" onclick="{
 
   class myAnimal{
@@ -12,85 +9,16 @@
       document.getElementById('myDiv01').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' years old<br>'
     }
   }
-  myAxolotl = new myAnimal('bill`s favour', 10000)
-  myAxolotl.myShow()
-}"<br><br>
+
+  class myAxolotl extends myAnimal {
+
+    myShow(){
+        document.getElementById('myDiv01').innerHTML= '`ello ' + this.myName + ' you are ' + this.myAge + ' long <br>'
+    }
+  }
+
+  myPet = new myAnimal('bills favour',10000)
+  myPet.myShow()
+
+}"> <br><br>
 <div id='myDiv01'>...</div> <br>
-
-<script src='https://code.responsivevoice.org/responsivevoice.js'></script>
-
-<input type="button" value="Use ResponsiveCode"onclick="{
-  responsiveVoice.speak('ded')
-}"><br><br>
-
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Mage of Light has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Fly" onclick="{
-responsiveVoice.speak('After getting his barings he flies and goes on a killing spree', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Seer of Time has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Witch of Space has Ascended', 'US English Female',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Sylph of Hope has Ascended', 'US English Female',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Knight of Void has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Rogue of Life has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Page of Heart has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Prince of Doom has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Theif of Breath has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Heir of Mind has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Bard of Blood has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> Rise" onclick="{
-responsiveVoice.speak('The Male Maid of Rage has Ascended', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
-
-<input type="button" value="==> win" onclick="{
-responsiveVoice.speak('they all get their powers mastered fast. defeating the black king in no time flat', 'US English Male',
-{pitch:1, rate: 1, volume: 1})
-}"><br><br>
