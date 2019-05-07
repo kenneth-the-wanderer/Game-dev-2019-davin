@@ -1,0 +1,92 @@
+<h2 align=center>t4a03-random-bounce-console-score-davin.html</h2>
+
+<img src="https://cdn.discordapp.com/attachments/376870293542535168/441649384761851904/4FAwKTYwoAEOIDBSQKlIIFaEjU5ZpFFQAgizoOs1EABVBgtAIAZLQHGB8FUAAFFlUAgCzqOMxGARRAgdEKAJDRHmB8FEABFFhUAQ.png"
+ id="davin" style="position:absolute;z-index:-1; left:100px; top:450px width:125px; height:100px; ">
+
+<script>
+  var myLooping = 0
+  var mySpeed =10
+  var myDirection = 1
+  var myTotal = 0
+</script>
+
+<input type=button value="auto right" onClick="{
+clearInterval(myLooping)
+myLooping = setInterval(function(){
+
+  mySpeed = (Math.floor(Math.random()*30)+5) * myDirection
+
+  document.getElementById('davin').style.left =
+  parseInt(document.getElementById('davin').style.left) + mySpeed + 'px'
+
+
+  if (parseInt(document.getElementById('davin').style.left) > 1450){
+    myDirection = myDirection * -1
+    myTotal = myTotal +1
+    document.getElementById('myScore').value = myTotal
+  }
+
+  if (parseInt(document.getElementById('davin').style.left) < 0){
+    myDirection = myDirection * -1
+    myTotal = myTotal +1
+    document.getElementById('myScore').value = myTotal
+  }
+
+    console.log(mySpeed)
+    //console.log(myTotal)
+}, 60)
+}">
+
+<input type=button value="auto left" onClick="{
+clearInterval(myLooping)
+myLooping = setInterval(function(){
+
+  mySpeed = (Math.floor(Math.random()*-30)-5) * myDirection
+
+  document.getElementById('davin').style.left =
+  parseInt(document.getElementById('davin').style.left) + mySpeed + 'px'
+
+
+  if (parseInt(document.getElementById('davin').style.left) > 1450){
+    myDirection = myDirection * -1
+    myTotal = myTotal +1
+    document.getElementById('myScore').value = myTotal
+  }
+
+  if (parseInt(document.getElementById('davin').style.left) < 0){
+    myDirection = myDirection * -1
+    myTotal = myTotal +1
+    document.getElementById('myScore').value = myTotal
+  }
+
+    console.log(mySpeed)
+    //console.log(myTotal)
+}, 60)
+}">
+
+<input type=button value="auto up" onClick="{
+clearInterval(myLooping)
+myLooping = setInterval(function(){
+
+  mySpeed = (Math.floor(Math.random()*30)+5) * myDirection
+
+  document.getElementById('davin').style.top =
+  parseInt(document.getElementById('davin').style.top) + mySpeed + 'px'
+
+
+  if (parseInt(document.getElementById('davin').style.top) > 1450){
+    myDirection = myDirection * -1
+    myTotal = myTotal +1
+    document.getElementById('myScore').value = myTotal
+  }
+
+  if (parseInt(document.getElementById('davin').style.top) < 0){
+    myDirection = myDirection * -1
+    myTotal = myTotal +1
+    document.getElementById('myScore').value = myTotal
+  }
+
+    console.log(mySpeed)
+    //console.log(myTotal)
+}, 60)
+}">
