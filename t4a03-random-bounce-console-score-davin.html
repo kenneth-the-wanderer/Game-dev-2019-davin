@@ -64,7 +64,7 @@ myLooping = setInterval(function(){
 }, 60)
 }">
 
-<input type=button value="auto up" onClick="{
+<input type=button value="stop" onClick="{
 clearInterval(myLooping)
 myLooping = setInterval(function(){
 
@@ -76,13 +76,11 @@ myLooping = setInterval(function(){
 
   if (parseInt(document.getElementById('davin').style.top) > 1450){
     myDirection = myDirection * -1
-    myTotal = myTotal +1
     document.getElementById('myScore').value = myTotal
   }
 
   if (parseInt(document.getElementById('davin').style.top) < 0){
     myDirection = myDirection * -1
-    myTotal = myTotal +1
     document.getElementById('myScore').value = myTotal
   }
 
@@ -90,3 +88,4 @@ myLooping = setInterval(function(){
     //console.log(myTotal)
 }, 60)
 }">
+
