@@ -13,7 +13,7 @@
 <input type=button value="auto right" onClick="{
 clearInterval(myLooping)
 myLooping = setInterval(function(){
-  mySpeed = (Math.floor(Math.random()*30)+5) * myDirection
+  mySpeed = (Math.floor(Math.random()*20)+5) * myDirection
   document.getElementById('davin').style.left =
   parseInt(document.getElementById('davin').style.left) + mySpeed + 'px'
   if (parseInt(document.getElementById('davin').style.left) > 1450){
@@ -34,7 +34,7 @@ myLooping = setInterval(function(){
 <input type=button value="auto left" onClick="{
 clearInterval(myLooping)
 myLooping = setInterval(function(){
-  mySpeed = (Math.floor(Math.random()*-30)-5) * myDirection
+  mySpeed = (Math.floor(Math.random()*-20)-5) * myDirection
   document.getElementById('davin').style.left =
   parseInt(document.getElementById('davin').style.left) + mySpeed + 'px'
   if (parseInt(document.getElementById('davin').style.left) > 1450){
@@ -55,7 +55,7 @@ myLooping = setInterval(function(){
 <input type=button value="stop" onClick="{
 clearInterval(myLooping)
 myLooping = setInterval(function(){
-  mySpeed = (Math.floor(Math.random()*30)+5) * myDirection
+  mySpeed = (Math.floor(Math.random()*20)+5) * myDirection
   document.getElementById('davin').style.top =
   parseInt(document.getElementById('davin').style.top) + mySpeed + 'px'
   if (parseInt(document.getElementById('davin').style.top) > 1450){
